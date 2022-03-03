@@ -1,0 +1,93 @@
+body{
+    background-color: #FFFFFF;
+}
+@font-face {
+    font-family: Quicksand-light;
+    src: url("../source/static/Quicksand-Light.ttf");
+}
+.breadcrumb-wrapper {
+    background-color: #e9ecef;
+    height: 200px;
+    width: 1455px;
+}
+.page-top {
+    text-align: center;
+    align-items: center;
+    top: 10px;
+    height: 200px;
+    margin-bottom: 40px;
+    z-index: 4;
+}
+.seek{
+    color: #e9ecef;
+    font-size: 45px;
+}
+.breadcrumb {
+    text-align: center;
+    --bs-breadcrumb-divider: '/';
+    align-items: center;
+    margin: 0 auto;
+    background-color: unset;
+    margin-top: -10px;
+}
+.breadcrumb .breadcrumb-item a:hover{
+    color: #6c757d;
+}
+.tbody{
+    font-family: Quicksand-light;
+    width: 1200px;
+    height: 1042.72px;
+    margin: 0 127px 0 127px;
+    padding: 0 30px 0 30px;
+    display: block;
+    color: #5b5252;
+    height: 1850px;
+}
+.title{
+    text-align: center;
+    height: 345.1px;
+    width: 949.987px;
+    padding: 0 0 0 10px;
+    right: -94.9962px;
+    left: 94.9875px;
+    display: block;
+    position: relative;
+}
+.title h5{
+    font-weight: 500;
+}
+.title h3{
+    height: 30px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.title h1{
+    font-size: 46px;
+    color: #69B3E3;
+    line-height: 57.8px;
+    font-weight: 700;
+    height: 119.6px;
+    width: 939.987px;
+    display: block;
+    text-align: center;
+}
+.tbody img{
+    position: relative;
+    border-radius: 20px;
+    display: block;
+    margin-left: -84px;
+    width: 1130px;
+    height: 635.625px;
+}
+.tbody .article-body{
+    display: block;
+    clear: both;
+    margin-top: 636px;
+}
+.tbody .involve ul li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
