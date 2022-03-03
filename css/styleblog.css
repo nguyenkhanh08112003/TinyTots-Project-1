@@ -41,7 +41,7 @@ body{
     padding: 0 30px 0 30px;
     display: block;
     color: #5b5252;
-    height: 1850px;
+    height: 2400px;
 }
 .title{
     text-align: center;
@@ -71,7 +71,7 @@ body{
     display: block;
     text-align: center;
 }
-.tbody img{
+.tbody .title img{
     position: relative;
     border-radius: 20px;
     display: block;
@@ -90,4 +90,59 @@ body{
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 6px;
+}
+.article-body img{
+    padding: 0 0 0 10px;
+    position: relative;
+    right: -94.9962px;
+    left: 94.9875px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin-left: -84px;
+    width: 1130px;
+    height: 635.625px;
+}
+.article-body h1{
+    font-weight: 550;
+    margin: 0 0 18px 0;
+    padding-top: 20px;
+}
+/*Các bài viết khác*/
+.wrapper .head h3{
+    margin-top: 60px;
+    border-left: #69B3E3 3px solid;
+    padding-left: 12px;
+    font-weight: 650;
+    color: #69B3E3;
+}
+.wrapper .section-head{
+    height: 48px;
+    border-bottom: 1px #dadada solid;
+    margin-bottom: 460px;
+}
+.section-body .card h6{
+    color: #5b5252;
+    font-weight: 650;
+}
+.section-body .card h2{
+    color: #69B3E3;
+    font-weight: 650;
+}
+.section-body ul li{
+    margin-top: 30px;
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 30px;
+}
+.section-body ul li:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all ease-in-out 0.4s;
+}
+.section-body a{
+    text-decoration: none;
+}
+.section-body .card{
+    border-radius: 15px;
 }
