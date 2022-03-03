@@ -8,7 +8,6 @@ body{
 .breadcrumb-wrapper {
     background-color: #e9ecef;
     height: 200px;
-    width: 1455px;
 }
 .page-top {
     text-align: center;
@@ -36,8 +35,7 @@ body{
 .tbody{
     font-family: Quicksand-light;
     width: 1200px;
-    height: 1042.72px;
-    margin: 0 127px 0 127px;
+    margin: 0 157px 0 157px;
     padding: 0 30px 0 30px;
     display: block;
     color: #5b5252;

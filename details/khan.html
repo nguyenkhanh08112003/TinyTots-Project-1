@@ -5,21 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog - TinyTots</title>
+    <title>Gile - Product details</title>
     <link rel="icon" href="../img-source/logo_id.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/styleblog.css">
-    <link rel="stylesheet" href="../css/header-footer-style.css" type="text/css">
+    <link rel="stylesheet" href="../css/header-footer-style.css">
+    <link rel="stylesheet" href="../css/style-products-detail.css">
+    <script src="../js/angular.min.js"></script>
 </head>
 <body>
-<header style="margin-bottom: 14px;margin-left: -20px;">
+<!--  Header copy/paste từ trang index sang  -->
+<header style="margin-bottom: 14px;">
     <div class="header-top">
         <div class="container" style="margin-left: 160px;">
             <div class="ht-left">
@@ -32,7 +34,7 @@
                     0987.729.543
                 </div>
             </div>
-            <div class="ht-right">
+            <div class="ht-right" style="margin-right: 160px;">
                 <p style="font-weight: 550;">Free shipping for orders over 100$++</p>
             </div>
         </div>
@@ -43,10 +45,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div style="border: #D3D2D0 1px solid" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div style="border: #D3D2D0 1px solid" class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 search">
                     <li style="width: 180px;padding-left: -20px;" class="nav-item dropdown">
-                        <a class="nav-link" style="padding-left: 24px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>All Category<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <a class="nav-link" style="padding-left: 24px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>All Category<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg></strong></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,7 +78,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li style="width: 280px;margin-left: -345px;;padding-right: 20px;background-color: #517785;" class="nav-item dropdown">
-                        <a style="color: #E2F7FF;" class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="28" fill="currentColor" class="bi bi-blockquote-right" viewBox="0 0 16 16">
+                        <a style="color: #E2F7FF;" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong><svg style="margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="28" fill="currentColor" class="bi bi-blockquote-right" viewBox="0 0 16 16">
                             <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm10.113-5.373a6.59 6.59 0 0 0-.445-.275l.21-.352c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.326-.182.569-.182h.281a1.686 1.686 0 0 0-.123-.498 1.379 1.379 0 0 0-.252-.37 1.94 1.94 0 0 0-.346-.298zm-2.168 0A6.59 6.59 0 0 0 10 6.352L10.21 6c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.327-.182.569-.182h.281a1.749 1.749 0 0 0-.117-.492 1.402 1.402 0 0 0-.258-.375 1.94 1.94 0 0 0-.346-.3z"/>
                         </svg>All Department</strong></a>
                         <ul class="dropdown-menu department" aria-labelledby="navbarDropdown">
@@ -98,10 +100,10 @@
                         </ul>
                     </li>
                     <li style="margin-left: 160px;" class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>News</strong></a>
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>News</strong></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Product<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Product<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg></strong></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -112,7 +114,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Brand<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Brand<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg></strong></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="height: 200px;overflow-y: scroll;">
@@ -140,18 +142,16 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Store<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Store<svg style="font-size: 8px;margin-left: 8px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg></strong></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Dưới 50$</a></li>
-                            <li><a class="dropdown-item" href="#">Dưới 40$</a></li>
-                            <li><a class="dropdown-item" href="#">Dưới 35$</a></li>
-                            <li><a class="dropdown-item" href="#">Dưới 30$</a></li>
+                            <li><a class="dropdown-item" href="#">Ha Noi</a></li>
+                            <li><a class="dropdown-item" href="#">Ho Chi Minh</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Blog</strong></a>
+                        <a class="nav-link" href="../blog/main-blog.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Blog</strong></a>
                     </li>
                     <li class="nav-item dropdown" style="margin-left: 80px">
                         <a class="cart" style="font-weight: 550;color: black;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
@@ -160,94 +160,187 @@
                     </li>
                 </ul>
             </div>
-    </div>
-    </nav>
+        </nav>
     </div>
 </header>
+<!--  Phần riêng của từng trang con nằm ở đây. Begin  -->
 <div class="page-top">
     <div class="breadcrumb-wrapper">
         <h2 class="seek">.</h2>
         <div class="breadcrumb-title">
-            <h2 class="page-title"><strong> Blog </strong></h2>
+            <h2 class="page-title"><strong> Product Details </strong></h2>
         </div>
         <nav class="breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html" style="color: #24ACF5"><strong>Home</strong></a></li>
-                <li class="breadcrumb-item active" aria-current="page"><strong>Blog</strong></li>
+                <li class="breadcrumb-item"><a href="../fashion.html" style="color: #24ACF5"><strong>Fashion Brand</strong></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><strong>Gile</strong></li>
             </ol>
         </nav>
     </div>
 </div>
-<div class="tbody" style="height: 2250px;">
-    <div class="title">
-        <h5><strong>SCIENTIFICALLY CARE WITH MOTHER</strong></h5>
-        <h1><strong>WELCOME 2022 – AWESOME GOLDEN TIGERS</strong></h1>
-        <p>Babies born in the year of the Tiger have the bravery of a lord, so they are very strong, individual and independent. Therefore, the Golden Tiger baby is the expectation of parents with many outstanding advantages.</p>
-        <img src="../img-source/blog41.jpg">
-    </div>
-    <div class="article-body">
-        <ul>
-            <li>Baby Yellow Tiger is very benevolent, likes animals or things that can spark imagination and attention, good receptive, intelligent and creative.</li>
-            <li>As an adult, the Golden Tiger baby will be strong and easily adapt to the pressures and rigors of work. Moreover, the Tigers are modern people but never go against the culture of the tradition. They seem to have a mix of classic and modern elements, vibrant but extremely calm.</li>
-            <li>Very kind, always ready to help people, but never satisfied with his current life, so when he grows up, this Tiger baby always tries, strives, works hard.</li>
-            <li>Tigers appear strong and tough on the outside, but deep inside, they are emotional people. They are honest and sincere with everyone. Among the crowd, the Tiger year is dynamic, enthusiastic, outstanding, attracting all eyes around, always optimistic, loves life, never feels pressured or tired in life.</li>
-            <li>Baby Yellow Tiger loves the fresh, peaceful, open space of nature. Even when they grow up, they often travel far away to discover and experience new things in life. They are optimistic, love life like children, always smile and talk, innocent, never feel lonely.</li>
-            <li>People born in the year of the Tiger are quite generous. They like to show their talents, want to receive praise and praise from everyone. Right from birth, this person has been influenced by power, so they always strive to reach the top of the game. Age of Tiger will not lose, submit to anyone.</li>
-        </ul></br>
-        <p>In general, babies born in the year of the Tiger year 2022 are compassionate and eager to learn. Later when growing up, children will have a very realistic view of life and have optimistic beliefs to overcome all challenges in life. Thanks to their ability to learn and accumulate, children born in the year of the Tiger 2022 will grow up like an "encyclopedia", with a rich understanding of life.</p>
-    </div>
-    <div class="involve">
-        <h3 style="color: #69B3E3;font-weight: 700;height: 30px;margin-bottom: 24px;margin-top: 50px;">Related Posts</h3>
-        <ul>
-            <li>CARE INSTRUCTIONS FOR WHITE COLORS ALWAYS CLEAN AND NEW</li>
-            <li>1 DAY amount of food for babies from 6 months to 6 years old</li>
-            <li>Instructions for Toe Care for Newborns</li>
-            <li>HOW COLORS IMPACT TO CHILDREN?</li>
-            <li>Baby's SMALL Milestones ENJOY PARENTS</li>
-            <li>NEW SLEEP SAFETY: THE PROBLEM OF LIVING WITH PARENTS</li>
-        </ul>
-    </div>
-    <div class="wrapper">
-        <div class="section-head">
-            <div class="head">
-                <h3> Taking care of pregnant and postpartum mothers</h3>
+<div class="container-fluid" style="max-width: 1250px;margin-left: 100px;">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="product-img">
+                        <div class="current-img-wrap">
+                            <div class="current-img">
+                                <img src="../img-source/gile1.png" class="img-fluid pic-zoom" id="pic-main" alt="">
+                            </div>
+                        </div>
+                        <div class="same-product-wrap">
+                            <div class="same-product">
+                                <ul>
+                                    <li><img src="../img-source/gile1.png" onclick="changeImg('one')" class="same-product-item" id="one" alt=""></li>
+                                    <li><img src="../img-source/gile2.png" onclick="changeImg('two')" class="same-product-item" id="two" alt=""></li>
+                                    <li><img src="../img-source/gile4.png" onclick="changeImg('three')" class="same-product-item" id="three" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="product-details row">
+                        <div class="product-price">
+                            <span>Price: </span>
+                            <span class="price">5,49$</span>
+                        </div>
+                        <div class="product-color-size-filter">
+                            <form action="#" method="get">
+                                <div class="color-picker btn-group" aria-label="color-picker">
+                                    <span>Color: </span>
+                                    <button type="button" class="btn btn-primary" id="pink"></button>
+                                    <button type="button" class="btn btn-primary" id="green"></button>
+                                    <button type="button" class="btn btn-primary" id="blue"></button>
+                                </div>
+                                <br>
+                                <div class="size-picker btn-group" role="group" aria-label="size-picker">
+                                    <span>Size: </span>
+                                    <button type="button" class="btn btn-primary" id="size1">
+                                        <label for="size1">1-3M</label>
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="size2">
+                                        <label for="size2">4-6M</label>
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="size3">
+                                        <label for="size3">6M-12M</label>
+                                    </button>
+                                </div>
+                                <div class="add-to-cart">
+                                    <div class="quantity" ng-app="myApp" ng-controller="myCtrl">
+                                        <input type="number" id="quantity_sanpham1" class="input-text" min="1" max="" step="1" name="quantity" value="0" ng-model="qty" ng-click="Calc()">
+                                        <span> Total Price: {{total | currency: 'VND '}}</span>
+                                    </div>
+                                    <button type="submit" class="add_to_cart_button button alt">Add to cart</button></br></br>
+                                    <a href="https://docs.google.com/document/d/1hkKP9vxNJ7Vn3owid1vzj-6j_-u4tY5R/edit">Product Details</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="product-sharing row">
+                        <span>Share: </span>
+                        <ul>
+                            <li>
+                                <a class="facebook-share" href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="instagram-share" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="pinterest-share" href="#" target="_blank">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="section-body">
-                <ul>
-                    <li>
-                        <a href="blog5.html"><div class="card" style="width: 22rem;">
-                            <img src="../img-source/blog2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Taking care of pregnant and postpartum mothers</h6>
-                                <h2 class="card-text"><strong>Mommy brain - Does the mother's brain...</strong></h2>
-                            </div>
-                        </div></a>
+            <div class="product-description row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Mô tả</button>
                     </li>
-                    <li>
-                        <a href="blog6.html"><div class="card" style="width: 22rem;">
-                            <img src="../img-source/blog3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Taking care of pregnant and postpartum mothers</h6>
-                                <h2 class="card-text"><strong>AMAZING MOMENTS WHEN BABY BIRTH</strong></h2>
-                            </div>
-                        </div></a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="more-info-tab" data-bs-toggle="tab" data-bs-target="#more-info" type="button" role="tab" aria-controls="more-info" aria-selected="false">Thông tin bổ sung</button>
                     </li>
-                    <li>
-                        <a href="blog7.html"><div class="card" style="width: 22rem;">
-                            <img src="../img-source/blog4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Taking care of pregnant and postpartum mothers</h6>
-                                <h2 class="card-text"><strong>DOING YOGA WITH BABY, HAVE YOU...</strong></h2>
-                            </div>
-                        </div></a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="rating-tab" data-bs-toggle="tab" data-bs-target="#rating" type="button" role="tab" aria-controls="contact" aria-selected="false">Đánh giá</button>
                     </li>
                 </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                        <p><strong>Product introduction:</strong></br>
+                            - Brand name: Miomio</br>
+                            - General introduction:</br>
+                            French Linen is a soft, lightweight material safe, safe from nature. The thick layer of Miomio's cotton helps to keep the optimal warm but has been squeezed to bring the most comfort.</br>
+                            - Product's name: Gile 2 layers of pink rabbits</br>
+                            - Material: Cotton</br>
+                            - Storage instructions: Wash clothes by hand</p>
+                    </div>
+                    <div class="tab-pane fade" id="more-info" role="tabpanel" aria-labelledby="moreInfo-tab">
+                        <p><strong>Description:</strong></br></br>
+                            Linen Linen quilted cotton is a super thick, warm material for frozen prices. Keeping the ivory white with the original "carpentry" of the French Linen, Miomio delicate use of colorful embroidery and small bags to make the product eye-catching and more lively. The seams along the body's body helps cotton layers hold firmly so that the product is washable and still durable.</br></br>
+                            Reference price list:</br>
+                        <ul>
+                            <li>Size 0-1M: 3-4Kg high 50-54cm</br></li>
+                            <li>Size 1 – 3M: 4 – 5Kg high 54 – 62cm</br></li>
+                            <li>Size 3 – 6M: 5 – 6Kg high 62 – 69cm</br></li>
+                            <li>Size 6 – 9M: 5 – 6Kg high 69 – 72cm</br></li>
+                            <li>Size 9 – 12M:  8Kg high 72 – 76cm</br></li>
+                            <li>Size 12 – 18M: 10Kg high 76 – 83cm</br></li>
+                            <li>Size 18M – 24M: 11-13Kg high 83-90cm</br></li>
+                            <li>Size 3Y: 13-15Kg high 90-94cm</br></li>
+                            <li>Size 4Y: 15-17Kg high 94-110cm</br></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="rating" role="tabpanel" aria-labelledby="rating-tab">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Your email</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Say something?</label>
+                            <textarea rows="5" class="form-control" id="formGroupExampleInput2" placeholder="Say somethings?"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-right col-lg-3">
+            <div class="sidebar-right-wrapper">
+                <h3 class="sidebar-title">Maybe you like</h3>
+                <div class="sidebar-item">
+                    <h5 class="sidebar-item-title">Product portfolio</h5>
+                    <ul class="sidebar-list list-group">
+                        <li class="sidebar-list-item list-group-item"><a href="#">Short-sleeved set</a></li>
+                        <li class="sidebar-list-item list-group-item"><a href="#">Long-sleeved set</a></li>
+                        <li class="sidebar-list-item list-group-item"><a href="#">Overalls</a></li>
+                        <li class="sidebar-list-item list-group-item"><a href="#">Dress</a></li>
+                        <li class="sidebar-list-item list-group-item"><a href="#">Jacket</a></li>
+                        <li class="sidebar-list-item list-group-item"><a href="#">Accessory</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<footer style="margin-left: -148px;">
-    <div class="container">
+<!--  Footer copy/paste từ trang index sang  -->
+<footer>
+    <div class="container" style="border-bottom: #e3e3e3 1px solid;height: 420px;margin-left: 18px;">
         <div class="row">
             <div class="col" style="margin-top: -12px;">
                 <div class="left">
@@ -256,10 +349,10 @@
                         <li class="slogan">TINYTOTS MANUFACTURING & TRADING COMPANY LIMITED</li>
                         <li class="head-list">Headquarters :</li>
                         <li>India</li>
-                        <li class="head-list" style="margin-top: -14px">TinyTots Hanoi  :</li>
-                        <li>So 8 - Ton That Thuyet - My Dinh - Ha Noi</li>
+                        <li class="head-list" style="margin-top: -14px">TinyTots Hanoi Office :</li>
+                        <li>No. 8A Ton That Thuyet, My Dinh, Nam Tu Liem, Hanoi, Vietnam</li>
                         <li class="head-list" style="margin-top: -14px">TinyTots HoChiMinh Office :</li>
-                        <li>So 8 - Ton That Thuyet - My Dinh - Ha Noi</li>
+                        <li>590 Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh City, Vietnam</li>
                         <li style="margin-top: -14px">Phone: 0987.729.543</li>
                         <li style="margin-top: -14px">Email: nguyenkhanh08112003@gmail.com</li>
                         <li style="margin-top: -14px">
@@ -307,11 +400,25 @@
             </div>
         </div>
     </div>
+    <div>
+        <p style="text-align: center">© 2021 TinyTots - HaNoi Limited Company. All rights reserved. WordPress Theme : Zigcy Lite</p>
+    </div>
 </footer>
-<script src="../js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<a href="#" class="to-top"><i style="font-size: 40px" class="fas fa-caret-square-up"></i></a>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+        $scope.price = 3.79;
+        $scope.qty = 0;
+        $scope.total = "";
+        $scope.Calc = function() {
+            $scope.total = $scope.qty * $scope.price;
+        }
+    });
+</script>
+
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="../js/products-detail.js"></script>
 </body>
 </html>
