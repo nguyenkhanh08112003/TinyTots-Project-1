@@ -111,6 +111,9 @@ body{
 .article-body ul li{
     margin-bottom: 8px;
 }
+.article-body iframe{
+    border-radius: 15px;
+}
 /*Các bài viết khác*/
 .wrapper .head h3{
     margin-top: 60px;
