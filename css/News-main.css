@@ -1,0 +1,11 @@
+div.main-content-item {
+    padding: 30px 0;
+}
+div.content-main a {
+    background-color: lightskyblue;
+    color: white;
+    border: 1px solid lightskyblue;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 3px;
+}
