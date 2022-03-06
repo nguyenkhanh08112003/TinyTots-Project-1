@@ -101,6 +101,9 @@
     height: 152px;
     margin-top: 80px;
 }
+.contact .contact-item svg{
+    color: #69B3E3;
+}
 .contact .contact-item ul li{
     text-align: left;
     text-decoration: none;
