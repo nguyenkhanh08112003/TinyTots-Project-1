@@ -28,6 +28,9 @@ form input{
     border-radius: 0;
     margin-left: 20px;
 }
+.container-fluid form.d-flex button:hover{
+    background-color: #24ADF5 !important;
+}
 .nav-item{
     margin-right: 30px;
 }
@@ -596,7 +599,6 @@ footer a{
     padding-top: 100px;
     font-family: Quicksand-light;
     width: 400px;
-    z-index: 1;
     float: right;
     margin-right: 340px;
     color: #5b5252;

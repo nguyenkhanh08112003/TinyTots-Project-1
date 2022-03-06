@@ -1,0 +1,53 @@
+.form{
+    font-family: Quicksand-light, sans-serif;
+    text-align: center;
+    align-items: center;
+    width: 1140px;
+    height: 700px;
+    border: black 1px solid;
+}
+.contact{
+    float: left;
+    width: 515px;
+    height: 690px;
+}
+.contact .section-title h2{
+    color: #69B3E3;
+    margin-top: 40px;
+    height: 52px;
+    font-size: 40;
+    display: block;
+    text-align: center;
+}
+.contact .section-title p{
+
+}
+.contact-form{
+    background-color: #90CEF1;
+    padding: 40px;
+    display: block;
+    border-radius: 34px;
+    float: right;
+    width: 515px;
+    height: 690px;
+    color: white;
+}
+.contact-form .form-email h3{
+    line-height: 37.5px;
+    font-size: 30px;
+}
+.contact-form .form-email p{
+
+}
+.contact-form ul li{
+    list-style-type: none;
+    border-radius: 15px;
+    height: 56px;
+    text-align: center;
+}
+.contact-form ul li input{
+    width: 440px;
+}
+.contact-form input{
+    background-color: #90CEF1;
+}
