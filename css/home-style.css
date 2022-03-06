@@ -28,6 +28,9 @@ form input{
     border-radius: 0;
     margin-left: 20px;
 }
+.container-fluid form.d-flex button:hover{
+    background-color: #24ADF5 !important;
+}
 .nav-item{
     margin-right: 30px;
 }
