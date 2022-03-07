@@ -1,0 +1,37 @@
+.section-title ul li{
+    display: inline-block;
+    float: left;
+}
+.section-title .price{
+    float: right;
+}
+.contact-form{
+    background-color: #fbfbfb;
+    border-left: 1px solid #80817f;
+    border-radius: 0px;
+}
+.contact-form .form-email h3, p{
+    color: black;
+}
+.contact-form .group{
+    margin-top: -40px;
+}
+.form .product .img, .infor{
+    border-bottom: 1px solid #80817f;
+}
+.form .product .total{
+    border-top: 1px solid #80817f;
+}
+.infor{
+    height: 80px;
+}
+.infor input{
+    width: 240px;
+}
+.infor input, button{
+    height: 50px;
+    border-radius: 5px;
+}
+.ship{
+    height: 40px;
+}

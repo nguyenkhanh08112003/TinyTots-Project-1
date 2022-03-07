@@ -192,3 +192,20 @@ img.same-product-item:hover {
 .add-to-cart span{
     padding-left: 12px;
 }
+.add-to-cart button{
+    padding: 4px 0 4px 0;
+    line-height: 24px;
+    width:40%;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: #69B3E3;
+    color: white;
+    border: white 1px solid;
+}
+.size button{
+    line-height: 24px;
+    width: 20%;
+    padding-top: 4px;
+    background-color: #69B3E3;
+    color: white;
+}
