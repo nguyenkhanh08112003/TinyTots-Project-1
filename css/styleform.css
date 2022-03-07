@@ -42,7 +42,7 @@ div#form-container a {
 div#form-container button {
     border-radius: 20px;
     border: 1px solid lightgrey;
-    background-color: #6C95A3;
+    background-color: #69B3E3;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -127,7 +127,7 @@ div#form-container input {
     transform: translateX(-100%);
 }
 .overlay {
-    background: #6C95A3;
+    background: #69B3E3;
     color: #FFFFFF;
     position: relative;
     left: -100%;
