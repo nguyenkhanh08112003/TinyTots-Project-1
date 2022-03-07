@@ -2,6 +2,34 @@ body{
     background-color: #fbfbfb;
     overflow-x: hidden;
 }
+.breadcrumb-wrapper {
+    background-color: #e9ecef;
+    height: 200px;
+    margin-left: -80px;
+    width: 1455px;
+}
+.page-top {
+    text-align: center;
+    align-items: center;
+    top: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    z-index: 4;
+}
+.seek{
+    color: #e9ecef;
+    font-size: 45px;
+}
+.breadcrumb {
+    text-align: center;
+    --bs-breadcrumb-divider: '/';
+    align-items: center;
+    margin: 0 auto;
+    background-color: unset;
+}
+.breadcrumb .breadcrumb-item a:hover{
+    color: #6c757d;
+}
 /*Header Style*/
 .header-second{
     margin-right: 240px;

@@ -1,0 +1,67 @@
+.bill-header {
+    border-bottom: 1px solid lightgrey;
+}
+.bill-header h4 {
+    font-size: 20px;
+    text-align: center;
+}
+.bill {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+.bill .product-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bill .product-remove button {
+    width: 20px;
+    height: 20px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    align-items: center;
+    border: unset;
+}
+.bill .product-remove button:focus {
+    outline: none;
+}
+.bill .product-remove button i {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bill .product--name {
+    display: block;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.bill .product--price, .bill .product-subtotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bill .product-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bill .product-qty input {
+    width: 40px;
+    height: 40px;
+    padding-left: 12px;
+    border: 1px solid lightgrey;
+    border-radius: unset;
+}
+.bill .product-qty button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: unset;
+}
+.check-out-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
