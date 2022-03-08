@@ -114,12 +114,12 @@ body{
     border-radius: 15px;
 }
 /*Các bài viết khác*/
-.wrapper .head h3{
-    margin-top: 60px;
-    border-left: #69B3E3 3px solid;
-    padding-left: 12px;
-    font-weight: 650;
-    color: #69B3E3;
+/*.wrapper .head h3{*/
+/*    margin-top: 60px;*/
+/*    border-left: #69B3E3 3px solid;*/
+/*    padding-left: 12px;*/
+/*    font-weight: 650;*/
+/*    color: #69B3E3;*/
 }
 .wrapper .section-head{
     height: 48px;
