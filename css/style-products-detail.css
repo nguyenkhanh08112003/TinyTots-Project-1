@@ -138,13 +138,12 @@ div.add-to-cart div.quantity input {
     width: 50px;
     margin-top: 10px;
 }
-.add_to_cart_button {
-    margin-top: 10px;
-    width: 240px;
-    height: 52px;
+a.prd-link {
+    margin-top: 20px;
     background-color: #69B3E3;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
+    padding: 5px;
 }
 div.product-sharing {
     margin-top: 20px;
