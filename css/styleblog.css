@@ -8,6 +8,7 @@ body{
 .breadcrumb-wrapper {
     background-color: #e9ecef;
     height: 200px;
+    margin-left: 30px;
 }
 .page-top {
     text-align: center;

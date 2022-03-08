@@ -65,3 +65,20 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.thanhtoan button{
+    margin-left: 820px;
+    background-color: #69B3E3;
+    border: none;
+    color: white;
+    height: 52px;
+    width: 120px;
+}
+.thanhtoan button:hover{
+    background-color: #24ACF5;
+}
+.more-product{
+    margin-top: -75px;
+}
+.bill-subtotal h4{
+    padding-top: 8px;
+}

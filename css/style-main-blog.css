@@ -11,7 +11,8 @@ section.header-section{
 .breadcrumb-wrapper {
     background-color: #e9ecef;
     height: 200px;
-    /*width: 1455px;*/
+    width: 1455px;
+    margin-left: 30px;
 }
 .page-top {
     text-align: center;

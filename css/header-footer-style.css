@@ -5,7 +5,7 @@ body{
 .breadcrumb-wrapper {
     background-color: #e9ecef;
     height: 200px;
-    margin-left: -80px;
+    /*margin-left: -80px;*/
     width: 1455px;
 }
 .page-top {
