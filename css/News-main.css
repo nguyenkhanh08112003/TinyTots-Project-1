@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Quicksand-light;
+    src: url("../source/static/Quicksand-Light.ttf");
+}
+.main-content{
+    font-family: Quicksand-light;
+}
+.main-content .content-title h3{
+    color: #24ACF5;
+}
+.content-main-link a{
+    border-radius: 15px;
+    background-color: #69B3E3;
+}
 div.main-content-item {
     padding: 30px 0;
 }
