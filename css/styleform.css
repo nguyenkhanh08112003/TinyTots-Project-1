@@ -54,6 +54,9 @@ div#form-container button {
 div#form-container button:focus {
     outline: none;
 }
+div#form-container input:focus {
+    outline: none;
+}
 div#form-container button.ghost {
     background-color: transparent;
     border-color: #FFFFFF;
