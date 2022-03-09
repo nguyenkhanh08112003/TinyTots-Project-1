@@ -191,7 +191,7 @@
                     <tr class="ship">
                         <td>Amount:</td>
                         <td style="padding-left: 80px;">
-                            <input type="number" value="1" min="1" max="99" step="1" required>
+                            <input type="number" name="prd-amount" value="1" min="1" max="99" step="1" required>
                         </td>
                     </tr>
                     <tr class="ship">
@@ -212,23 +212,24 @@
                 <div class="form-email">
                     <h3>Billing Information</h3>
                     <p>Do not have an account? <a href="login.html">Register</a></p>
-                    <div class="input-group mb-3 group">
-                        <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Address" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" style="width: 120px;" placeholder="Email" aria-label="Username" required>
-                        <input type="text" class="form-control" placeholder="Phone" aria-label="Server" required>
-                    </div>
-
-                    <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea" placeholder="Evaluate"></textarea>
-                    </div>
-                    <div class="input-group">
-                        <a href="index.html"><button style="width: 240px;height: 60px;border-radius: 5px;background-color: #69B3E3;border: none;margin-top: 25px;">Payment</button></a>
-                    </div>
+                    <form action="#" method="get">
+                        <div class="input-group mb-3 group">
+                            <input type="text" name="customer_name" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" name="address" class="form-control" placeholder="Address" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" name="email" class="form-control" style="width: 120px;" placeholder="Email" aria-label="Username" required>
+                            <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Server" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Evaluate"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <a href="index.html"><button style="width: 240px;height: 60px;border-radius: 5px;background-color: #69B3E3;border: none;margin-top: 25px;">Payment</button></a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
