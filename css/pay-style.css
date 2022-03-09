@@ -1,37 +1,89 @@
-.section-title ul li{
+/*Body Style*/
+body a{
+    text-decoration: none;
+}
+.breadcrumb-wrapper {
+    background-color: #e9ecef;
+    height: 200px;
+    margin-left: -80px;
+    width: 1455px;
+}
+.page-top {
+    text-align: center;
+    align-items: center;
+    top: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    z-index: 4;
+}
+.seek{
+    color: #e9ecef;
+    font-size: 45px;
+}
+.breadcrumb {
+    text-align: center;
+    --bs-breadcrumb-divider: '/';
+    align-items: center;
+    margin: 0 auto;
+    background-color: unset;
+}
+.breadcrumb .breadcrumb-item a:hover{
+    color: #6c757d;
+}
+.sidebar-right {
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+    top: 20px;
+}
+.sidebar-title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+.sidebar-item {
+    width: 90%;
+    margin: 0 auto;
+}
+.sidebar-item-title {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgrey;
+    margin: 20px 10px 0 10px;
+    padding-bottom: 10px;
+    font-weight: 550;
+    text-align: center;
+}
+.sidebar-list-item, .list-group-item {
+    margin: 20px 10px 0 10px;
+    border-bottom: 1px solid lightgrey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fafcf9;
+}
+.sidebar-list-item, .list-group-item ul li{
+    list-style-type: none;
     display: inline-block;
+}
+.sidebar-list-item, .list-group-item ul li>p{
+    margin-top: 12px;
+}
+.sidebar-list-item, .list-group-item .list img{
+    margin-left: -25px;
     float: left;
 }
-.section-title .price{
-    float: right;
+.sidebar-list-item a{
+    color: #80817f;
+    font-weight: 650;
 }
-.contact-form{
-    background-color: #fbfbfb;
-    border-left: 1px solid #80817f;
-    border-radius: 0px;
+.sidebar-list-item:hover >a{
+    color: #24ACF5;
+    transition: all ease-in-out 0.3s;
 }
-.contact-form .form-email h3, p{
-    color: black;
-}
-.contact-form .group{
-    margin-top: -40px;
-}
-.form .product .img, .infor{
-    border-bottom: 1px solid #80817f;
-}
-.form .product .total{
-    border-top: 1px solid #80817f;
-}
-.infor{
-    height: 80px;
-}
-.infor input{
-    width: 240px;
-}
-.infor input, button{
-    height: 50px;
-    border-radius: 5px;
-}
-.ship{
-    height: 40px;
+.form-email{
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 100px;
 }
