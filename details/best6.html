@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sets - Product details</title>
+    <title>Gile - Product details</title>
     <link rel="icon" href="../img-source/logo_id.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
@@ -163,7 +163,7 @@
         </nav>
     </div>
 </header>
-<!--  Breadcrumb  -->
+<!--  Breadcrumb -->
 <div class="page-top">
     <div class="breadcrumb-wrapper">
         <h2 class="seek">.</h2>
@@ -182,35 +182,35 @@
 <!--Main-->
 <div class="container-fluid" style="max-width: 1250px;margin-left: 100px;">
     <div class="row">
-        <!--        main content-->
+        <!--            main-content-->
         <div class="col-lg-9">
             <div class="row">
-                <!--                product's image thumbnail-->
+                <!--                    product's image-thumbnail-->
                 <div class="col-lg-6 col-sm-6">
                     <div class="product-img">
                         <div class="current-img-wrap">
                             <div class="current-img">
-                                <img src="../img-source/set3.png" class="img-fluid pic-zoom" id="pic-main" alt="">
+                                <img src="../img-source/best6.jpg" class="img-fluid pic-zoom" id="pic-main" alt="">
                             </div>
                         </div>
                         <div class="same-product-wrap">
                             <div class="same-product">
                                 <ul>
-                                    <li><img src="../img-source/set1.png" onclick="changeImg('one')" class="same-product-item" id="one" alt=""></li>
-                                    <li><img src="../img-source/set2.png" onclick="changeImg('two')" class="same-product-item" id="two" alt=""></li>
-                                    <li><img src="../img-source/set3.png" onclick="changeImg('three')" class="same-product-item" id="three" alt=""></li>
+                                    <li><img src="../img-source/best5.jpg" onclick="changeImg('one')" class="same-product-item" id="one" alt=""></li>
+                                    <li><img src="../img-source/best7.jpg" onclick="changeImg('two')" class="same-product-item" id="two" alt=""></li>
+                                    <li><img src="../img-source/best8.jpg" onclick="changeImg('three')" class="same-product-item" id="three" alt=""></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--                product's details-->
+                <!--                    product's details -->
                 <div class="col-lg-6 col-sm-6">
                     <div class="product-details row">
                         <div class="product-price">
-                            <span>Product Name:<strong> Sets of new newborns 5 pink cat face</strong></span></br>
+                            <span>Product Name:<strong> Gile 2 layer pink of rabits</strong></span>
                             <span>Price: </span>
-                            <span class="price">14,49$</span>
+                            <span class="price">5,49$</span>
                         </div>
                         <div class="product-color-size-filter">
                             <form action="#" method="get">
@@ -235,7 +235,7 @@
                                 </div>
                                 <div class="add-to-cart">
                                     <div class="quantity" ng-app="myApp" ng-controller="myCtrl">
-                                        <input type="number" id="quantity_sanpham1" class="input-text" min="1" max="" step="1" name="quantity" value="0" ng-model="qty" ng-click="Calc()">
+                                        <input type="number" id="quantity_sanpham1" class="input-text" min="0" max="" step="1" name="quantity" value="0" ng-model="qty" ng-click="Calc()">
                                         <span> Total Price: {{total | currency: 'VND '}}</span>
                                     </div>
                                     <br>
@@ -243,7 +243,7 @@
                                         <a href="../pay-form.html" class="prd-link">Buy now</a>
                                         <a href="../cart.html" class="prd-link">Add to cart</a>
                                     </div></br></br>
-                                    <p><a href="https://docs.google.com/document/d/16mM9SVnDo6dwkvZPe6M2dHss-rnhlkor/edit"><strong>Product introduction:</strong></a></br>
+                                    <p><a href="https://docs.google.com/document/d/1VMlVMnUnjdRy3uwCop3Cs7xvqSHaOxn2/edit"><strong>Product introduction:</strong></a></br>
                                         - Brand name: Miomio</br>
                                         - General introduction:</br>
                                         French Linen is a soft, lightweight material safe, safe from nature. The thick layer of Miomio's cotton helps to keep the optimal warm but has been squeezed to bring the most comfort.</br>
@@ -281,7 +281,7 @@
                     </div>
                 </div>
             </div>
-            <!--            product's description-->
+            <!--                    product's description-->
             <div class="product-description row">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -334,7 +334,7 @@
                 </div>
             </div>
         </div>
-        <!--        sidebar-right-->
+        <!--            sidebar-right-->
         <div class="sidebar-right col-lg-3">
             <div class="sidebar-right-wrapper">
                 <h3 class="sidebar-title">Maybe you like</h3>
@@ -423,7 +423,7 @@
 <script>
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope) {
-        $scope.price = 14.49;
+        $scope.price = 5.49;
         $scope.qty = 0;
         $scope.total = "";
         $scope.Calc = function() {
