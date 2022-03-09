@@ -68,9 +68,6 @@
     border-bottom: unset;
     margin: 0 10px 0 10px;
 }
-.product-details {
-    padding-top: 30px;
-}
 span.price {
     font-weight: 500;
 }
@@ -145,8 +142,10 @@ a.prd-link {
     color: white;
     padding: 5px;
 }
-div.product-sharing {
-    margin-top: 20px;
+div.product-sharing ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
 }
 div.product-description {
     margin-top: 30px;
