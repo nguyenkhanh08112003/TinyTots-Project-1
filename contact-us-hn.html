@@ -229,13 +229,15 @@
             <div class="form-email">
                 <h3>Send email to TinyTots</h3>
                 <p>Your inquiry will be replied within 24 hours. Thank you!</p>
+                <form action="#" method="get">
                 <ul>
-                    <li><input type="text" placeholder="Enter your name"></li>
-                    <li><input type="email" placeholder="Enter your email"></li>
-                    <li><input type="text" placeholder="Enter your phone"></li>
-                    <li><textarea rows="5" placeholder="Title"></textarea></li>
-                    <li><button>Send</button></li>
+                    <li><input type="text" placeholder="Enter your name" required></li>
+                    <li><input type="email" placeholder="Enter your email" required></li>
+                    <li><input type="text" placeholder="Enter your phone" required></li>
+                    <li><textarea rows="5" placeholder="Title" required></textarea></li>
+                    <button type="submit">Send</button>
                 </ul>
+                </form>
             </div>
         </div>
     </div>
