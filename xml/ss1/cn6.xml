@@ -1,0 +1,7 @@
+<Name Nickname = 'John'>
+    <First>John</First>
+    <!--John is yet to pay the term fees-->
+    <Last>Brown</Last>
+    <?feesprocessor SELECT fees FROM STUDENTFEES?>
+    <Semester>Final</Semester>
+</Name>
