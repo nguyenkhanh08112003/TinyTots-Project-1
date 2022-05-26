@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE program SYSTEM "HelloJimmy.dtd">
+<Program>
+    <Comments>
+        This is a simple Java Program. It will display the message "Hello Jimmy, How are you?" on execution.
+    </Comments>
+    <Code> public static void main(String[] args){
+        System.out.println("Hello Jimmy, How are you?"); //Display the string.
+            }
+        }</Code>
+</Program>
