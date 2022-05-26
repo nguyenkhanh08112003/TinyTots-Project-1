@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE test SYSTEM "bb.dtd">
+<test>
+    <name>Khanh</name>
+    <number>2</number>
+    <street>2</street>
+    <village>Ai</village>
+    <city>Ha Noi</city>
+</test>

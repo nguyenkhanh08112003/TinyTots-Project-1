@@ -329,7 +329,7 @@ footer a{
     display:inline-block;/* or block */
     text-decoration:none;
     transition:all .3s ease-out;
-    position: sticky;
+    /*position: sticky;*/
     bottom: 40px;
     right: 10px;
     color: #577C8A;

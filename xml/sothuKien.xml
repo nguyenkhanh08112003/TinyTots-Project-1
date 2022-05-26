@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE webtest [
+        <!ELEMENT webtest (name,number,street,village,city)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT number (#PCDATA)>
+        <!ELEMENT street (#PCDATA)>
+        <!ELEMENT village (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        ]>
+<webtest>
+        <name>Khanh</name>
+        <number>2</number>
+        <street>2</street>
+        <village>Ai</village>
+        <city>Ha Noi</city>
+</webtest>

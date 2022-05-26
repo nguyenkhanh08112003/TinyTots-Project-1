@@ -1,0 +1,6 @@
+<!ELEMENT test (name,number,street,village,city)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT number (#PCDATA)>
+        <!ELEMENT street (#PCDATA)>
+        <!ELEMENT village (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
