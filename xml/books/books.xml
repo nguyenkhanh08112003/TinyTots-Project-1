@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rules.css"?>
+<books>
+    <heading>Welcome!</heading>
+    <book>
+        <title>Title -: Web Programming</title>
+        <author>Author -: Khanh NB</author>
+        <publisher>Publisher -: Akkey</publisher>
+        <edition>Edition -: 3</edition>
+        <price>Price -: $20</price>
+    </book>
+    <book>
+        <title>Title -: Internet world-wide-web</title>
+        <author>Author -: Khanh NB</author>
+        <publisher>Publisher -: Akkey</publisher>
+        <edition>Edition -: 3</edition>
+        <price>Price -: $20</price>
+    </book>
+</books>
