@@ -12,7 +12,7 @@
 <div id="content" ng-controller="WeatherCtrl">
     <div class="article">
     <h2>{{city}}, {{country}} ({{lat}}, {{lon}})</h2>
-    <div style="float: left"><img width="140%" ng-src="{{icon}}"></div>
+    <div style="float: left"><img ng-src="{{icon}}"></div>
     <h3>Current: {{ current | number: 1}} °C</h3>
     min: {{temp_min | number: 1}} °C, max: {{temp_max | number: 1}} °C.
     <h3>Wind: {{ wind_speed }} km/h</h3>
